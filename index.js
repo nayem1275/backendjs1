@@ -30,7 +30,7 @@ app.get('/twiter', (req, res) => {
           res.json(data)
   })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
